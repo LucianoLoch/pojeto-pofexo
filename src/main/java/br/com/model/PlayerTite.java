@@ -32,8 +32,8 @@ public class PlayerTite {
 	private String originalId;
 	@Column(name = "hasBid", columnDefinition = "boolean default false", nullable = false)
 	private boolean hasBid;	
-	//@Column(name="clubName")
-	//private String clubName;
+	@Column(name="clubName")
+	private String clubName;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="team_id")
@@ -103,12 +103,12 @@ public class PlayerTite {
 	public void setTeam(TeamTite team) {
 		this.team = team;
 	}
-	/*
+	
 	public String getClubName() {
 		return clubName;
 	}
 	public void setClubName(String clubName) {
 		this.clubName = clubName;
-	}	
-*/
+		
+
 }
