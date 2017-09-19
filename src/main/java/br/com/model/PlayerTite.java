@@ -110,5 +110,5 @@ public class PlayerTite {
 	public void setClubName(String clubName) {
 		this.clubName = clubName;
 		
-
+	}
 }
